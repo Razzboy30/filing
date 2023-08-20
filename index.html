@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filing</title>
+    <!-- Add Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+      background-color: #ffebb4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #ffacac;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 100%;
+    }
+    .heading {
+        padding-bottom: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5 centre">
+      <h1 class="text-center mb-4 heading">Filing : Dropzone</h1>
+
+      <form
+        action="/"
+        method="post"
+        enctype="multipart/form-data"
+        class="text-center"
+      >
+        <div class="form-group">
+          <label for="file" class="btn btn-primary">
+            Choose File
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept=".png, .jpg, .jpeg, .pdf"
+              class="d-none"
+            />
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success btn-submit">Submit</button>
+        <a class="btn btn-success getlink" href="http://localhost:3000/getlink">Get Links</a>
+      </form>
+
+      <h4 id="url" class="text-center mt-4"></h4>
+      <h5 class="text-center mt-4">Limitations - <br>•File should not be more than 10mb<br>•Supported files - .png .jpg .jpeg .png .pdf</h4>
+    </div>
+
+    <!-- Add Bootstrap JS and your custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[type="file"]').change(function(e){
+                let file = e.target.files[0].name;
+                alert(`${file} is the selected file .`);
+            });
+        });
+</script>
+
+  </body>
+</html>
