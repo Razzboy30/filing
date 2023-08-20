@@ -1,3 +1,4 @@
+****NOTE - Change env to .env before running the server**** <br> <br>
 **Introduction** <br>
 Filing is an file application where you can get links for your files to download and share with anyone. 
 This application uses node.js through express and aws services on the backend and utilises mongodb as a database which stores all the links generated for download.
