@@ -21,7 +21,7 @@ Install node.js
 4. In the terminal, first write "npm install" and it will automatically install all the prerequisite modules/files to run the application.
 5. Now write "node app.js" to run the app and it will say "Server Started" in the Terminal.
 6. After this the application is hosted locally on port 3000.On your browser, on "http://localhost:3000/" the application will be running .
-7. **Setup Method two (Without VS Code)** <br>
+**Setup Method two (Without VS Code)** <br>
 1. Open Terminal on your mac or Command Prompt on your windows.
 2. Cd to the directory where the downloaded folder is located, like this - "cd <directory name>"
 3. For example, If the directory is on Desktop, command would be "cd Desktop/filing" .
