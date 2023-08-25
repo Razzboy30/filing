@@ -11,7 +11,7 @@ The link generated is valid upto 7 days and after that the link will stop workin
 It can also only take in file types like .png, .jpg, .jpeg and .pdf.
 
 **Run Locally**<br>
-In order to run this app locally, you have to install all require modules.<br>
+There are two methods you can run this application locally.
 **Prerequisites** <br>
 Install node.js <br>
 
